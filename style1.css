@@ -17,7 +17,7 @@ html{
 }
 
 .row-container{
-    width: 144rem;
+    /* width: 144rem; */
     padding-left: calc(2 * var(--gutter-horizontal));
 	display: inline-block;
 	vertical-align: top;
@@ -57,9 +57,9 @@ html{
 
 .table td{
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    padding: .8rem .5rem;
+    padding: .8rem 1rem;
 }
 
 /* Card border & hover property start */
@@ -90,4 +90,67 @@ input[type="button"]{
     outline: none;
     border-radius: .7rem;
 }
+
+@media (max-width: 1200px) {
+    /* Selectors and styles affecting screens UP TO 979px (Desktop) */
+    html{
+        font-size: 62.5%;
+    }
+
+    .row-container{
+        padding-left: 0;
+    }
+
+    .row-container h1{
+        margin-left: var(--gutter-horizontal);
+        /* margin-right: 2 * var(--gutter-horizontal); */
+    }
+    .row{
+        width: calc(29% - 2 * var(--gutter-horizontal)/3);
+        /* margin-left: 2 * var(--gutter-horizontal); */
+    }
+  }
+  
+  @media (max-width: 900px) {
+      /* Selectors and styles affecting screens UP TO 767px (Tablet) */
+    html{
+        font-size: 56.25%;
+    }
+
+    .row-container{
+        padding-left: 0;
+    }
+
+    .row-container h1{
+        margin-left: var(--gutter-horizontal);
+        margin-right: 0;
+    }
+    .row{
+        width: calc(40% - var(--gutter-horizontal)/2);
+        /* margin-left: 10% */
+    }
+
+  }
+  
+  @media (max-width: 600px) {
+	  /* Selectors and styles affecting screens UP TO 480px (Phone) */
+    html{
+        font-size: 50%;
+    }
+
+    .row-container{
+        padding-left: 0;
+    }
+
+    .row-container h1{
+        margin-left: var(--gutter-horizontal);
+        margin-right: 0;
+    }
+    .row{
+        width: 80%;
+        margin-left: 10%
+    }
+
+
+  }
 
