@@ -47,7 +47,8 @@ html{
     border-radius: .7rem;
 	overflow-x: hidden;
 	transition: .3s;
-	background-color: white;
+    background-color: white;
+    cursor: pointer;
 }
 
 .table{
@@ -74,6 +75,7 @@ html{
     border: 1px solid rgb(108, 99, 255);
     box-shadow: none;
     transform: scale(1.05);
+
 }
 /* Card hover property end */
 
@@ -89,8 +91,11 @@ input[type="button"]{
     border: none;
     outline: none;
     border-radius: .7rem;
+    cursor: pointer;
 }
-
+/* input[type="button"]:hover{
+    cursor: pointer;
+} */
 @media (max-width: 1200px) {
     /* Selectors and styles affecting screens UP TO 979px (Desktop) */
     html{
